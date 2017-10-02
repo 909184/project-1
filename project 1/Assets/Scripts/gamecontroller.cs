@@ -40,35 +40,29 @@ public class gamecontroller : MonoBehaviour {
 			if (bronzeSupply >= 1) {
 				bronzeSupply -= 1;
 				bronzeOre += 1;
+
+				cubePostion = new Vector3 (Random.Range (-7, 8), Random.Range (-7, 8), Random.Range (-7, 8));
+				bronzeCube = Instantiate (cubePrefab, cubePostion, Quaternion.identity);
+
+				bronzeCube.GetComponent<Renderer> ().material.color = Color.red;
 			} 
 			else if (silverSupply >= 1 && bronzeSupply == 0) {
 				silverSupply -= 1;
 				silverOre += 1;
+
+				cubePostion = new Vector3 (Random.Range (-7, 8), Random.Range (-7, 8), Random.Range (-7, 8));
+				silverCube = Instantiate (cubePrefab, cubePostion, Quaternion.identity);
+
+				silverCube.GetComponent<Renderer> ().material.color = Color.white; 
 			}
 
 			print ("Bronze:" + bronzeOre + "    Silver:" + silverOre);
 
 			startMining += miningSpeed;
 
-
-				cubePostion = new Vector3 (Random.Range (-7, 8), Random.Range (-7, 8), Random.Range (-7, 8));
-				silverCube = Instantiate (cubePrefab, cubePostion, Quaternion.identity);
-
-				silverCube.GetComponent<Renderer> ().material.color = Color.white; 
-
 				
-			
-			
-
-				cubePostion = new Vector3 (Random.Range (-7, 8), Random.Range (-7, 8), Random.Range (-7, 8));
-				bronzeCube = Instantiate (cubePrefab, cubePostion, Quaternion.identity);
-
-				bronzeCube.GetComponent<Renderer> ().material.color = Color.red;
-
-				
-				
-			}
 		}
 	}
 }
+
 
