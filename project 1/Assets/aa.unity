@@ -136,9 +136,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miningSpeed: 0
-  bronzeSupply: 0
-  silverSupply: 0
-  cubePrefab: {fileID: 1637195214417240, guid: c6e807e24850a29479b292148a5af53d, type: 2}
+  bronzePrefab: {fileID: 1490238320456296, guid: c8ff7faf20fd106458a66b1b51242dc7,
+    type: 2}
+  silverPrefab: {fileID: 1599556586600352, guid: bcf3d4479e35f494ab6149f11f4707bd,
+    type: 2}
+  goldPrefab: {fileID: 1568186190482738, guid: 7bf6f16a0fcd412489407636f7735ff3, type: 2}
 --- !u!4 &91630196
 Transform:
   m_ObjectHideFlags: 0
@@ -266,7 +268,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.578, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
